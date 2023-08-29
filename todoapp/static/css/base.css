@@ -1,0 +1,127 @@
+body {
+    background-color: #daedf9;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    padding-top: 55px ;
+}
+.todoAppWrapper {
+    max-width: 530px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 12px 0px 30px -6px #777777;
+    border-radius: 10px;
+}
+
+a {
+   color: #595959;
+   text-decoration: none; 
+}
+
+h1 {
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background: rgb(2,0,36);
+background: linear-gradient(
+    90deg, 
+  rgba(2,0,36,1) 0%,
+  rgba(106,106,254,1) 35%,
+  rgba(0,212,255,1) 100%
+  );
+  border-radius: 10px 10px 0 0;
+  color: white;
+}
+.taskWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid rgb(105, 105, 105);
+}
+
+.taskTitle {
+    display: flex;
+    align-items: center;
+}
+
+.taskCompletedIcon {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(161, 252, 166);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.taskInCompletedIcon {
+    height: 20px;
+    width: 20px;
+    background-color: #595959;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.loginAndLogout {
+  padding: 20px;  
+}
+.loginAndLogout a {
+    color: lightcoral;
+}
+
+.editButton {
+    color: #3a873a;
+}
+
+.deleteButton {
+    color: red;
+}
+
+/*タスク検索と追加のフォーム*/
+.searchWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.searchInput {
+    outline:none;
+    border:1px solid lightseagreen;
+    border-radius: 5px;
+    padding: 2px 4px;
+    width: 160px !important;
+}
+.searchButton {
+    border: 1px solid lightseagreen;
+    padding: 4px 10px;
+    background-color: #fafafa;
+    color: lightseagreen;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.4s;
+}
+.searchButton:hover {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.addButton {
+    font-size: 32px;
+    color: lightseagreen;
+}
+label {
+    display: block;
+}
+input[type="text"],
+textarea {
+    width:100%;
+}
+
+.accountWrapper {
+    padding: 20px;
+}
+.accountWrapper p{
+    margin: 0;
+    padding: 0;
+}

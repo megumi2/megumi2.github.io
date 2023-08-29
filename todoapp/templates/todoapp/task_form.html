@@ -1,0 +1,17 @@
+{% extends 'todoapp/base.html' %}
+{% block content %}
+
+<div class="header">
+    <a href="{% url 'tasks' %}" style="color: white;">戻る</a>
+</div>
+
+
+
+<form method="post" style="padding: 20px">
+    <!--Djangoが前もって入力フォームを用意してくれてる-->
+    {% csrf_token %} {{ form.as_p}}
+    <!--as_p:pタグを１つ１つつける役割-->
+    <input type="submit" value="追加" class="searchButton">
+</form>
+<!--CSRF検証とは・・・第三者の攻撃を防ぐルールを守ってないかどうか検証するもの守ってないとリクエスト中断される-->
+{% endblock content %}
